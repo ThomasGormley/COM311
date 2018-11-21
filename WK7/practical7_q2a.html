@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Week 7 Q2a</title>
+
+    <!-- Script for Average -->
+    <script>
+    
+    function calcAverage(){
+        var mk1 = parseFloat(document.getElementById("1").value);
+        var mk2 = parseFloat(document.getElementById("2").value);
+        var mk3 = parseFloat(document.getElementById("3").value);
+        var mk4 = parseFloat(document.getElementById("4").value);
+        var avg = (mk1+mk2+mk3+mk4)/4;
+        window.alert(avg)
+    }
+
+    </script>
+</head>
+<body>
+    <p>Please input your marks and click the button to start</p>
+    <form name="marks">
+        Mark 1: <input type="number" name="mark" id="1"> <br>
+        Mark 2: <input type="number" name="mark" id="2"><br>
+        Mark 3: <input type="number" name="mark" id="3"><br>
+        Mark 4: <input type="number" name="mark" id="4"><br>
+    <br>
+    <input type="button" value="Calculate Average" onclick="calcAverage();">
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tables and forms</title>
+</head>
+
+
+<body>
+    <div id="container">
+        <div id="head">
+            <h1>Welcome to Ulster</h1>
+            <img src="#" alt="Header Image" width="110" height="110" />
+        </div>
+        <form name="input" onsubmit="return validateForm()">
+
+            <h2>Student Information:</h2>
+
+            Student name: <input type="text" name="studentname" id="studentname"><br>
+            Term Address: <input type="text" name="address" id="address"><br>
+            Email Address: <input type="text" name="email" id="email"><br>
+            Postcode: <input type="text" name="postcode" id="postcode"><br>
+            Phone Number: <input type="text" name="phone" id="phone">
+
+
+
+            <h2>Module Information:</h2>
+            <table border="1" cellpadding="3">
+                <tbody>
+                    <tr>
+                        <th>Module Title</th>
+                        <th>Module Code</th>
+                        <th>Lecturer</th>
+                        <th>Class Time</th>
+                        <th>Lab Time</th>
+                    </tr>
+                    <tr>
+                        <td>Dynamic Web Authoring</td>
+                        <td>COM311</td>
+                        <td>Jane Zheng</td>
+                        <td>Monday 11:15</td>
+                        <td>Monday 9:15</td>
+                    </tr>
+                    <tr>
+                        <td>Visual Web Development</td>
+                        <td>COM322</td>
+                        <td>Simon Fraser</td>
+                        <td>Tuesday 11:15</td>
+                        <td>Tuesday 9:15</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Development</td>
+                        <td>COM360</td>
+                        <td>Edwin Curran</td>
+                        <td>Wednesday 11:15</td>
+                        <td>Wednesday 9:15</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <h2>Course Information:</h2>
+
+            <input type="radio" name="cinfo" value="IMD">IMD
+            <input type="radio" name="cinfo" value="CT">Computer Technologies
+            <input type="radio" name="cinfo" value="SE">Software Engineering
+            <input type="radio" name="cinfo" value="CS">Computer Science
+
+
+
+            <h2>I would like to be contacted by:</h2>
+
+            <input type="checkbox" name="contactmethod" value="email">Email
+            <input type="checkbox" name="contactmethod" value="mobile">Mobile
+            <input type="checkbox" name="contactmethod" value="post">Post
+            <input type="checkbox" name="contactmethod" value="visit">Visit
+
+            <h2>Other Comments:</h2>
+            <textarea rows="5" cols="60"></textarea>
+
+            <input type="submit" value="Submit" />
+            <input type="reset" value="Reset" />
+        </form>
+        <p>More information about the University can be found at <a href="http://www.ulster.ac.uk">here</a></p>
+    </div>
+</body>
+
+
+<script src="js.js"></script>
+
+
+
+</html>

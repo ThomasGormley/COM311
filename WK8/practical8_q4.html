@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Practical 8 Q4</title>
+</head>
+<body>
+    <form name="input">
+        First Name: <input type="text" name="fname" id="fname"><br>
+        Last Name: <input type="text" name="lname" id="lname"><br>
+        Age: <input type="number" name="age" id="age"><br>
+        Gender:
+            <select name="gender" id="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        Marital Status:
+            <select name="mstatus" id="mstatus">
+                <option value="married">Married</option>
+                <option value="single">Single</option>
+            </select>
+        </br>
+        <button onclick="getQuote()">Get Quote</button>    
+    </form>
+</body>
+<script>
+    function getQuote() {
+        var fname = document.getElementById("fname").value;
+        var lname = document.getElementById("lname").value;
+        var age = document.getElementById("age").value;
+        var gender = document.getElementById("gender").value;
+        var mstatus = document.getElementById("mstatus").value;
+        
+        if (age >= 30 && mstatus == "married") {
+            document.write(fname + " " + lname + ": your insurance class is <b>Class 1</b>")
+        }
+        else if (age >= 30 && mstatus == "single") {
+            document.write(fname + " " + lname + ": your insurance class is <b>Class 2</b>")
+        }
+        else if (age > 21 && age < 30 && mstatus == "married") {
+            document.write(fname + " " + lname + ": your insurance class is <b>Class 3</b>")
+        }
+        else if (age > 21 && age < 30 && mstatus == "single") {
+            document.write(fname + " " + lname + ": your insurance class is <b>Class 4</b>")
+        }
+        else if (age >= 17 && age <= 21 ) {
+            document.write(fname + " " + lname + ": your insurance class is <b>Class 5</b>")
+        }   
+    }
+</script>
+</html>

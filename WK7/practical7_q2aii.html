@@ -1,0 +1,49 @@
+<html>
+<head>
+    <title>Week 7 Q2a</title>
+
+    <!-- Script for Average -->
+    <script>
+    
+    function calcAverage(){
+        if (document.getElementById("1").value == "" || document.getElementById("2").value == "" || document.getElementById("3").value == "" || document.getElementById("4").value == "") {
+            window.alert("Plese fill in all fields")
+        }
+        else {
+        
+        var mk1 = parseFloat(document.getElementById("1").value);
+        var mk2 = parseFloat(document.getElementById("2").value);
+        var mk3 = parseFloat(document.getElementById("3").value);
+        var mk4 = parseFloat(document.getElementById("4").value);
+        var avg = (mk1+mk2+mk3+mk4)/4;
+        
+        if (avg => 90 && avg <= 100) {
+            alert("You got an A, your average mark is " + avg);
+        }
+        else if (avg => 80 && avg < 90) {
+            alert("You got a B, your average mark is " + avg);
+        }
+        else if (avg => 70 && avg < 800) {
+            alert("You got a C, your average mark is " + avg);
+        }
+        else if (avg => 60 && avg < 70) {
+            alert("You got a D, your average mark is " + avg);
+        }
+        else if (avg < 60) {
+            alert("You got an E - failed your average mark is " + avg);
+        }
+    }
+}
+    </script>
+</head>
+<body>
+    <p>Please input your marks and click the button to start</p>
+    <form name="marks">
+        Mark 1: <input type="number" name="mark" id="1"> <br>
+        Mark 2: <input type="number" name="mark" id="2"><br>
+        Mark 3: <input type="number" name="mark" id="3"><br>
+        Mark 4: <input type="number" name="mark" id="4"><br>
+    <br>
+    <input type="button" value="Calculate Average" onclick="calcAverage();">
+</body>
+</html>
