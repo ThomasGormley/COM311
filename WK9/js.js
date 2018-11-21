@@ -1,6 +1,6 @@
 function validateForm() {
     if (validInput() && validEmail() && validPhone()) {
-        alert("Success");
+        printFields();
     }
 }
 
@@ -28,9 +28,6 @@ function validInput() {
         email.focus();
         return false;
 
-    }
-    else if (email.value !== "" || email.value) {
-        return validateEmail()
     }
     else if (postcode.value == "" || !postcode.value) {
         alert("You must enter your postcode");
@@ -63,12 +60,40 @@ function validEmail() {
     }
 }
 function validPhone() {
-    let input = document.getElementById("phone").value;
 
-    for (i = 0; i < input.length; i++) {
-        theChar = input.substring(i, i + 1);
+    let theInput = document.getElementById("phone").value;
+    let theNumbersOnly = "";
+    for (i = 0; i < theInput.length; i++) {
+        theChar = theInput.substring(i, i + 1);
         if ((theChar >= "0") && (theChar <= "9")) {
-            numbersOnly = numbersOnly + theChar;
+            theNumbersOnly = theNumbersOnly + theChar;
         }
     }
+    debugger
+    if (theNumbersOnly.length < 11) {
+        alert("Please enter a valid phone number \n11 digits long")
+        return false;
+    }
+    else {
+        return true;
+    }
+}
+
+function printFields() {
+    let studentname = document.getElementById("studentname").value;
+    let address = document.getElementById("address").value;
+    let email = document.getElementById("email").value;
+    let postcode = document.getElementById("postcode").value;
+    let phoneno = document.getElementById("phone").value;
+    let courseinfo = document.input.cinfo.value;
+    let checkbox = document.input.cinfo.value;
+
+    document.getElementById("textbox").innerHTML = studentname + ", welcome to my homepage! \n" +
+        "The information you input is \n" +
+        "Address: " + address + "\n" +
+        "Email: " + email + "\n" +
+        "Post code: " + postcode + "\n" +
+        "Phone Number: " + phoneno + "\n" +
+        "Course: " + courseinfo + "\n" +
+        "All contact Methods are: " + checkbox;
 }
