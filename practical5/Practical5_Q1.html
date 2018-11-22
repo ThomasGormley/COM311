@@ -1,0 +1,51 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US"> <head>
+
+<script language=javascript type=text/javascript>
+function showInfo(){
+	var name = document.form.name.value;
+  	var uni  = document.form.university.value;
+  	var campus= document.form.campus.value;
+  	var course= document.form.course.value;
+	window.document.write("My name is"+" "+name+" "+"I'm a second year " + course + " student in " + uni + " at " + campus + ".");
+  
+}
+</script>
+
+</head>
+
+<body>
+
+	<form name="form">
+    <h1>Input your name below</h1>
+		<input type="text" size="30" name="name">
+		
+        <h3>Select the university you attend below:</h3>
+        <br />
+        <select name="university">
+        	<option value="Queens">QUB</option>
+            <option value="Ulster">UU</option>
+        </select>
+        
+        <h3>Select the campus you are based:</h3>
+        <br />
+        <select name="campus" >
+        	<option value="Jordanstown">Jordanstown</option>
+            <option value="Belfast">Belfast</option>
+            <option value="Coleraine">Coleraine</option>
+            <option value="Magee">Magee</option>
+        </select>
+        
+        <h3>Select the course you are doing from the list below:</h3>
+        <br />
+        <select name="course" >
+        	<option value="Software Engerineering">Software Engerineering</option>
+			<option value="Computer Science">Computer Science</option>
+			<option value="Interactive Multmedia Design">Interactive Multmedia Design</option>
+			<option value="Computer Technologies">Computer Technologies</option>
+        </select>
+        <br />
+        <input type="button" name="showinfo" value="Show Information" onclick="showInfo();">
+	</form>
+</body>
+
+</html>
