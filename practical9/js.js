@@ -82,6 +82,7 @@ function validPhone() {
     }
 }
 
+
 function printFields() {
     let studentname = document.getElementById("studentname").value;
     let address = document.getElementById("address").value;
@@ -91,7 +92,6 @@ function printFields() {
     let courseinfo = document.input.cinfo.value;
     let checkbox = document.input.contactmethod;
     let checkboxval = "";
-    debugger
 
     for (i = 0; i < checkbox.length; i++) {
         if (checkbox[i].checked) {
