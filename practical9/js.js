@@ -1,6 +1,10 @@
 function validateForm() {
     if (validInput() && validEmail() && validPhone()) {
         printFields();
+        return false;
+    }
+    else {
+        return false;
     }
 }
 
@@ -69,7 +73,6 @@ function validPhone() {
             theNumbersOnly = theNumbersOnly + theChar;
         }
     }
-    debugger
     if (theNumbersOnly.length < 11) {
         alert("Please enter a valid phone number \n11 digits long")
         return false;
@@ -86,8 +89,15 @@ function printFields() {
     let postcode = document.getElementById("postcode").value;
     let phoneno = document.getElementById("phone").value;
     let courseinfo = document.input.cinfo.value;
-    let checkbox = document.input.cinfo.value;
+    let checkbox = document.input.contactmethod;
+    let checkboxval = "";
+    debugger
 
+    for (i = 0; i < checkbox.length; i++) {
+        if (checkbox[i].checked) {
+            checkboxval = checkboxval + checkbox[i].value + " ";
+        }
+    }
     document.getElementById("textbox").innerHTML = studentname + ", welcome to my homepage! \n" +
         "The information you input is \n" +
         "Address: " + address + "\n" +
@@ -95,5 +105,5 @@ function printFields() {
         "Post code: " + postcode + "\n" +
         "Phone Number: " + phoneno + "\n" +
         "Course: " + courseinfo + "\n" +
-        "All contact Methods are: " + checkbox;
+        "Contact by: " + checkboxval;
 }
