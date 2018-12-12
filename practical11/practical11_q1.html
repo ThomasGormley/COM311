@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <title>
+        Practical 11 - Q1
+    </title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center">Popular Car Manufacturers</h1>
+        <p class="text-center">Here is a slideshow containing the logos of some popular car manufacturers</p>
+
+        <hr>
+
+        <div class="slideshow">
+            <img src="\images\audi_logo.png" alt="Audi Logo" name="slideframe">
+
+            <form name="slidecontrols">
+                <p id="caption">
+                    This is the logo of Audi automotive group
+                </p>
+                <input type="button" value="Previous slide" onclick="showSlide('prev')">
+                <input type="button" value="Next slide" onclick="showSlide('next')">
+                <br>
+                <label for="currentslide">Slide Number:</label>
+                <input type="text" name="currentslide" value="1" size="5">
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>

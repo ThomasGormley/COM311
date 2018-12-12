@@ -1,0 +1,22 @@
+body {
+    background-color:#e6e6e6;
+    height:100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    width:80%;
+    margin:0 auto;
+}
+.slideshow {
+    text-align: center;
+}
+.text-center {
+    text-align: center;
+}
+img {
+    max-width: 15%;
+    height:auto;
+}
+#caption {
+    color:#1d1d1d;
+}
