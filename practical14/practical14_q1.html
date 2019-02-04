@@ -1,0 +1,54 @@
+<html>
+
+    <head>
+    <title>practical14_q1</title>
+    </head>
+
+    <script>
+        // findDay Function
+        function findDay() {
+
+                //User input
+                var usrYear = document.getElementById("year").value;
+                var usrMonth = document.getElementById("month").value -1;
+                var usrDay = document.getElementById("day").value;
+                //Date
+                var d = new Date(usrYear, usrMonth, usrDay);
+
+                //Weekday array
+                var weekday = new Array(7);
+                weekday[0] = "Sunday";
+                weekday[1] = "Monday";
+                weekday[2] = "Tuesday";
+                weekday[3] = "Wednesday";
+                weekday[4] = "Thursday";
+                weekday[5] = "Friday";
+                weekday[6] = "Saturday";
+
+                var day = weekday[d.getDay()];
+
+                document.getElementById("result").innerHTML = `This date is a ${day}`;   
+        }
+
+        //Clock
+
+        var clockVar = setInterval(function() {
+        timer();
+        }, 1000);
+
+        function timer() {
+        var clockDate = new Date();
+        document.getElementById("clock").innerHTML = clockDate.toLocaleTimeString();
+        }
+    </script>
+    <body onload()>
+        <h1>Day checker</h1>
+        <h3 id="clock"></h3>
+        Year(yyyy) <input type="text" id="year"> <br>
+        Month(mm) <input type="text" id="month"> <br>
+        Day (dd) <input type="text" id="day"> <br>
+        <button id="submit" onclick="findDay()">Find the day</button>
+
+        <p id="result"></p>
+    </body>
+</html>

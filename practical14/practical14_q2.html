@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Practical 14 Q2</title>
+</head>
+<script type="text/javascript" language="JavaScript">
+
+    var theDays = new Array();
+    theDays[0] = "Sunday";
+    theDays[1] = "Monday";
+    theDays[2] = "Tuesday";
+    theDays[3] = "Wednesday";
+    theDays[4] = "Thursday";
+    theDays[5] = "Friday";
+    theDays[6] = "Saturday";
+
+    var theMonths = new Array();
+    theMonths[0] = "January";
+    theMonths[1] = "February";
+    theMonths[2] = "March";
+    theMonths[3] = "April";
+    theMonths[4] = "May";
+    theMonths[5] = "June";
+    theMonths[6] = "July";
+    theMonths[7] = "August";
+    theMonths[8] = "September";
+    theMonths[9] = "October";
+    theMonths[10] = "November";
+    theMonths[11] = "December";
+
+    function showTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+
+        var timeValue = "" + ((hours > 12) ? hours - 12 : hours);
+        ((timeValue == 0) ? timeValue = 12 : timeValue);
+        timeValue += ((minutes < 10) ? ":0" : ":") + minutes;
+        timeValue += ((seconds < 10) ? ":0" : ":") + seconds;
+        timeValue += (hours >= 12) ? " PM" : " AM";
+
+
+        var theyear = now.getFullYear();
+        var themonth = now.getMonth();
+        var thedate = now.getDate();
+        var theday = now.getDay();
+
+        var theLongDate = theDays[theday] + ", ";
+        theLongDate += thedate + " " + theMonths[themonth];
+        theLongDate += ", " + theyear;
+        var message = "";
+
+        if (hours >= 9 & hours <= 11 & theday == 1) {
+            message = "Attend practical class between 9 and 11am";
+        }
+        else if (hours >= 11 & hours <= 12 & theday == 5) {
+            message = "Go to class between 11am and 12pm"
+        } else if (hours == 22) {
+            message = "Go to bed"
+        } else {
+            message = "No reminders, check back tomorrow"
+        }
+
+
+
+        document.getElementById("time").innerHTML = `${theLongDate} ${timeValue}`
+        document.getElementById("message").innerHTML = message
+
+    }
+
+</script>
+
+<body onload="setInterval('showTime()',1000);">
+    <h1>Reminder app</h1>
+
+    <p id="time"></p>
+    <p id="message"></p>
+</body>
+
+</html>
