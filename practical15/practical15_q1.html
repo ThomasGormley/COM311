@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practical 15 - 16Coffee Shop 1</title>
+    <script type="text/javascript" language="JavaScript" src="mylibrary.js">
+    </script>
+    <script type="text/javascript" language="JavaScript">
+        function makeCookies() {
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+            SetCookie("username", username);
+            SetCookie("password", password);
+            alert("Password Remembered");
+        }
+
+        function getPassword() {
+            if (GetCookie("username") || GetCookie("password")) {
+                document.getElementById("username").value = GetCookie("username");
+                document.getElementById("password").value = GetCookie("password");
+                return true;
+            }
+        }
+
+        function resetPassword() {
+            DeleteCookie("username");
+            DeleteCookie("password");
+            alert("All details have been deleted.");
+        }
+
+        function logIn() {
+            if (getPassword() == true) {
+                alert("ok");
+            } else {
+                alert("false");
+            }
+        }
+    </script>
+</head>
+
+<body onload="getPassword();">
+    <h1>Welcome to 16Coffee!</h1>
+    Username <input type="text" name="username" id="username"> <br>
+    Password <input type="text" name="password" id="password"><br>
+    <input type="button" value="Remember Password" onclick="makeCookies()">
+    <input type="button" value="Log In" onclick="logIn()">
+    <input type="button" value="Reset" onclick="resetPassword();">
+</body>
+
+</html>
