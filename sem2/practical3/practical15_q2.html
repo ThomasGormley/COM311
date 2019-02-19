@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Practical 15 - 16Coffee Shop 2</title>
+    <script type="text/javascript" language="JavaScript" src="mylibrary.js">
+    </script>
+    <script type="text/javascript" language="JavaScript">
+        function makeCookies() {
+            var bgcolour = document.body.style.backgroundColor;
+            SetCookie("bgcolour", bgcolour);
+            alert("Background selection remembered");
+        }
+
+        function getBgColour() {
+            if (GetCookie("bgcolour")) {
+                var bgcolour = GetCookie("bgcolour");
+                document.body.style.backgroundColor = bgcolour;
+            }
+        }
+
+        function resetColour() {
+            DeleteCookie("bgcolour");
+            document.body.style.backgroundColor = "";
+            alert("All details have been deleted.");
+        }
+
+        function changeBgColour() {
+            var select = document.getElementById("colours");
+            var selectoption = select.options[select.selectedIndex].text;
+
+            document.body.style.backgroundColor = selectoption;
+        }
+
+    </script>
+</head>
+
+<body onload="getBgColour();">
+    <h1>Welcome to 16Coffee!</h1>
+    Select your background colour <br>
+    <select name="colours" id="colours" onchange="changeBgColour();">
+        <option value="yellow">Yellow</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+    </select>
+    <br>
+    <input type="button" value="Remember Colour" onclick="makeCookies();">
+    <input type="button" value="Reset Backround Colour" onclick="resetColour();">
+    <input type="button" value="Back to login page" onclick="history.go(-1)">
+</body>
+
+</html>

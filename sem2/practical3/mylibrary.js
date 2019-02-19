@@ -100,7 +100,6 @@ function SetCookie(name, value, expires, path, domain, secure) {
         temp += "; secure";
     }
     document.cookie = temp;
-    alert(document.cookie.length);
 }
 function GetCookie(name) {
     var arg = name + "=";

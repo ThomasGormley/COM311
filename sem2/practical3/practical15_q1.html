@@ -25,14 +25,19 @@
         function resetPassword() {
             DeleteCookie("username");
             DeleteCookie("password");
+            document.getElementById("username").value = "";
+            document.getElementById("password").value = "";
             alert("All details have been deleted.");
         }
 
         function logIn() {
-            if (getPassword() == true) {
-                alert("ok");
+            var username = document.getElementById("username").value;
+            var password = document.getElementById("password").value;
+
+            if (username == GetCookie("username") && password == GetCookie("password")) {
+                window.location.href("practical15_q2.html");
             } else {
-                alert("false");
+                alert("Wrong username/password");
             }
         }
     </script>
@@ -41,7 +46,7 @@
 <body onload="getPassword();">
     <h1>Welcome to 16Coffee!</h1>
     Username <input type="text" name="username" id="username"> <br>
-    Password <input type="text" name="password" id="password"><br>
+    Password <input type="password" name="password" id="password"><br>
     <input type="button" value="Remember Password" onclick="makeCookies()">
     <input type="button" value="Log In" onclick="logIn()">
     <input type="button" value="Reset" onclick="resetPassword();">

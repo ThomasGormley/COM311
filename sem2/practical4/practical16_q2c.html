@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script src="../jquery/jquery-3.3.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+    
+    $(document).ready(function(){
+      $("a").click(function(event){
+        alert("As you can see, the link no longer took you to jquery.com");
+        event.preventDefault();
+      });
+    });
+    
+  </script>
+</head>
+<body>
+  <a href="http://jquery.com/">jQuery</a>
+</body>
+</html>
