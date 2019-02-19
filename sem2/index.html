@@ -46,34 +46,10 @@
 
 			<h1>Week 1</h1>
 			<h3>Summary</h3>
-			<p>
 
-				This was the first lecture for the module "Dynamic Web Authoring Client View" (COM311). The module is
-				being
-				co-ordinated by Dr Huiru (Jane) Zheng.
-
-			</p>
-			<p>
-				This module will cover topics like web standards, accessibility and the browser object model. We will
-				also look at
-				client side scripting using the language "JavaScript" whereby we would like to achieve various outcomes
-				such as GUI
-				scripting, data collection as well as user profiling.
-			</p>
 
 			<h3>Practical</h3>
-			<p>
-				This week in the labs we firstly spent some time getting used to the iMacs in this lab as well as set up
-				the
-				connection to the Block 16 storage facilities.
-			</p>
-			<p>
-				After this we then revisited some of our HTML and CSS knowledge from year 1. We were tasked to create a
-				simple form
-				with some inputs, check boxes, radio buttons, text input and then a submit button.
 
-			</p>
-			<a href="practical1" style="text-decoration: none;"><button>Click to visit my form</button></a>
 		</div>
 		<hr>
 
@@ -82,47 +58,9 @@
 
 			<h1>Week 2</h1>
 			<h3>Summary</h3>
-			<p>
-
-				In the lecture this week we looked at our week 1 practical and looked at some feedback Jane had for us
-				moving
-				forward.
-				After this we began to look at XHTML (Extensible Hypertext Markup Language). XHTML was released
-				initially in 2000 -
-				it reformulates HTML asn an XML application. This makes it easier to process and easier to maintain. It
-				is
-				compatible with exisiting web browser technology and will be compaitble with future XML-based clients.
-
-			</p>
-			<p>
-				Next we began looking at some accessibility standards that we should use in our web pages. Firstly, Jane
-				showed us
-				the W3C validator tool. This is used to check the markup of web pages input to it.
-				<br>
-				Web accessibility is a key feature for all websites as the Internet should be accessible by all and so
-				as
-				developers we need to ensure we can facilitate this.
-				Some may have visibility issues, others hearing or physical/motor inabilites. This should not mean they
-				cannot
-				browse the web like everyone else.
-				<br>
-				We learned about the <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content
-					Accesibility
-					Guidelines (WCAG)</a> and <a href="https://webaim.org/intro/">accessible design</a>.
-				These outline some of the practices we should use when coding such as meaningful alt tags on pictures,
-				or longdesc
-				tags for screen-readers.
-			</p>
-
 
 			<h3>Practical</h3>
-			<p>
-				We spent this lab by trying out the validators provided by W3C and adding some extra features to our
-				Week 1 form to
-				make it more accesible. E.g. adding alt attributes and id, labels etc. to radio buttons and text entry.
-			</p>
 
-			<a href="practical2" style="text-decoration: none;"><button>Click to visit my form</button></a>
 		</div>
 		<hr>
 
@@ -133,57 +71,33 @@
 			<h1>Week 3</h1>
 			<h3>Summary</h3>
 			<p>
-
-				This week we began to look at the DOM (Document Object Model) and BOM (Browser Object Model) as well as
-				some
-				recapping from last years JavaScript.
-
+				Week 3 was introducing us to Internet cookies - these are all about maintaining state on a webpage.
 			</p>
 			<p>
-
-				The BOM is a browser-specific convention referring to all the objects exposed by the web browser.
-				DOM is a cross-platform convention for representing and interacting with objects in HTML, XHTML and XML
-				documents.
-				Objects in the DOM tree may be addressed and manipulated by using methods on the objects.
-
+				Cookies are small pieces of information that are:
+				<ul>
+					<li>Sent from a website</li>
+					<li>Stored on the visitors hard drive by the user's web browser</li>
+				</ul>
 			</p>
+
 			<p>
-				We also then looked at the fundamentals of JavaScript e.g the various properties such as
-				document.<i>bgColor</i>
-				and the events/event handlers such as <i>onmouseover</i>
+				Cookies are usesd to differentiate among users and personalise websites
 
+				They are used to:
+				<ul>
+					<li>Remember stateful information (e.g. items added into a shopping cart), manage the shopping cart,
+						personalise aspects of websites</li>
+					<li>Record the user's browsing activity (e.g. clicking particular buttons, logging in, or recording
+						which pages were visited in the past) - website statistics and creation of anonymous user
+						profiles</li>
+					<li>Remember arbitrary pieces of information previously entered (e.g. names, addresses, passwords,
+						and credit card numbers) - knows if the user is already logged in</li>
+				</ul>
 			</p>
-			<p>
-				JavaScript code that is inline (i.e. in the actual HTML document rather than in its own document) should
-				be placed
-				in the head tag and should be between script tags e.g.
 
-				<xmp>
-
-					<head>
-						<script type="text/javascript">
-					//JavaScript here
-						</script>
-					</head>
-				</xmp>
-			</p>
 			<h3>Practical</h3>
-			<p>
-				This week in the labs we firstly began using the onmouseover/onmouseout events to create a web page that
-				when you
-				hover over an image the image changed. We then used the same concept
-				to create some links that when hovered over would change the body background colour.
-			</p>
-			<p>
-				After this we then looked at how variables worked and how they would change depending on the statements
-				we assigned
-				to the variable. For example, we looked at how a variable containing an age would update
-				if we used methods like myAge == 50+10. We then did the same with a string of text instead of a number
-				in the
-				variable.
 
-			</p>
-			<a href="practical3" style="text-decoration: none;"><button>Click to visit my web page</button></a>
 		</div>
 		<hr>
 
@@ -231,54 +145,33 @@
 				$() function is a factory method that creates JQuery objects <br>
 				$(a) is a JQuery object containing all the a elements in the document
 			</p>
-			<p>
-				A function can be created using the function command
-				<xmp>
-					Function doSomething(){
-					var theVisitor = document.myform.visitor.value;
-					Window.alert("Is this OK," + theVisitor + "?");
-					}
-				</xmp>
-			</p>
-			<p>
-				At the end of the lecture we had a brief look into some basic debugging techniques for JavaScript. We
-				looked at
-				these because our code will not always work first time and sometimes we will need some information in
-				order to fix
-				and ultimately deploy code.
-
-			</p>
 
 			<p>
-				We looked at what Chrome and Firefox can help us with using the developer tools. Generally it will
-				output the line
-				which it discovers a problem on. This creates a good starting point for fixing errors.
+				$ is nothing but a shorthand notation for find method in JQuery. You can also use jQuery('' '') instead
+				of $('' '')
 			</p>
 
 			<p>
 				<h3>Practical</h3>
-				<p>
-					The practical begins by using some of our debugging tips from the lecture to try fix an error for
-					the <a href="practical4/listing1.3_error.html">listing1.3error.html</a>.
-				</p>
-				<p>
-					After this we looked at creating arrays to store some string variables and then outputting these
-					variables to a
-					larger string</br>
-					<a href="practical4/Practical4_Q3.html">Practical4_Q3.html</a>
-				</p>
 
 				<p>
-					Finally we then created a function to display a similar message from Question 3, but instead of an
-					array this time
-					we utilised local variables within a function. We also attached the JavaScript as an external
-					file.</br>
-					<a href="practical4/Practical4_Q5.html">Practical4_Q4.html</a>
-
-
+					For the practical we were asked to download jQuery from <a href="jquery.com">jQuery.com</a> and the
+					2 example HTML documents provided.
 				</p>
-				<a href="practical4" style="text-decoration: none;"><button>Click to see all practical
-						documents</button></a>
+
+				<p>Once we had looked at Jane's code and began to understand how jQuery worked, we moved onto the second
+					task.</p>
+
+				<p>
+					This task was to take some more code and add our own jQuery statement to it in order to change a
+					paragraph of text from "This is paragraph 1" to "Hello there" through calling a function called
+					<i>"selectElement"</i> &mdash; this is a built in function to jQuery.
+				</p>
+
+				<a href="/practical4/">
+					<button>Click to see all practical documents</button>
+				</a>
+
 		</div>
 		<hr>
 
@@ -288,100 +181,9 @@
 
 			<h1>Week 5</h1>
 			<h3>Summary</h3>
-			<p>
 
-				Week 5 we looked more JavaScript functions and how to access particular elements on the document object
-				model.
-
-			</p>
-			<p>
-
-				We can call functions to button click events using the onclick="myFunction()" or onload="myFunction()"
-				methods
-				within our HTML.
-
-			</p>
-			<p>
-				To use a function we must:
-			</p>
-			<ul>
-				<li>
-					Decide the function(s) of the function
-				</li>
-				<li>
-					Understand the input and output
-				</li>
-				<li>
-					Design the function
-					<ul>
-						<li>Make sure the function is relative independent </li>
-						<li>Can be reused - should be generalised</li>
-						<li>Easy to call</li>
-					</ul>
-				</li>
-				<li>
-					Call a function
-					<ul>
-						<li>
-							Directly
-							<ul>
-								<li>functioname(parameter1,parameter2); </li>
-							</ul>
-						</li>
-					</ul>
-				</li>
-				<li>
-					Via event handler
-					<ul>
-						<li>
-							onclick( functioname(parameter1,parameter2);)
-						</li>
-						<li>onload (functionname(parameter1, parameter2);)</li>
-					</ul>
-				</li>
-			</ul>
-
-			<p>
-				A function can also be called within a function
-			</p>
-			<xmp>
-
-				function add3(a,b,c){
-				var addtwo = add(a,b);
-				var result= add(addtwo, c);
-				return result;
-				}
-			</xmp>
-
-			<p>Within JavaScript we can access particular object values/property values from our HTML forms.</p>
-
-			<p>Using object names</p>
-			<p><i>var visitorname = document.myform.visitor.value;</i></p>
-
-			<p>Using element IDs</p>
-			<p><i>var visitorname = document.getElementById('visitorid').value;</i></p>
 
 			<h3>Practical</h3>
-			<p>
-				This weeks practical begins with us creating a form that includes some input types e.g. textboxes,
-				dropdown menus
-				and buttons.
-			</p>
-			<p>When the user inputs their information and clicks the button the web page will be updated to display a
-				sentence
-				that includes their name, university, campus and course they are studying.</p>
-			<a href="practical5/Practical5_Q1.html">Practical5_Q1.html</a>
-			<p>
-				Next we edited our form from week 2 so that it would output the information provided into the comments
-				box. To
-				achieve this we had to apply what we learned in the lecture as we were required to use variables to
-				select the
-				specific elements within the document object models.
-			</p>
-			<a href="practical5/Practical5_Q2.html">Practical5_Q2.html</a>
-
-			<a href="Practical5" style="text-decoration: none;"><button>Click to see all practical
-					documents</button></a>
 
 		</div>
 		<hr>
@@ -393,44 +195,8 @@
 			<h1>Week 6</h1>
 			<h3>Summary</h3>
 
-			<p>This week we began to look at looping statements. Looping statements refers to a statement which will
-				repeat code
-				that is declared within its body.</p>
-
-			<p>There are 3 types of loops: For, While and Do While.</p>
-			<p>For loop - this is divided into conditions which allows for us to loop until conditions are met</p>
-			<xmp>
-				for (initial expr; test condition; update expr) {
-				JavaScript statements;
-				}
-			</xmp>
-
-			<p>While loop - this type of loop only needs a test condition for it to run so long as the condition is met
-			</p>
-			<xmp>
-				while (condition) {
-				JavaScript statements;
-				}
-
-			</xmp>
-
-			<p>Do... While loop - This loop is similar to the While loop where in it will only work so long as the
-				condition is
-				met however in this case we determine the condition after the code is executed.</p>
-			<xmp>
-				Do {
-				JavaScript statements;
-				} while (condition);
-
-			</xmp>
 			<h3>Practical</h3>
-			<p>This weeks practical consisted of putting our looping statements to work.</p>
-			<p>The practical document includes 5 buttons, each button utilises a different type of loop to get the
-				expected
-				outcome</p>
-			<a href="Practical6/practical6_q2.html">Practical6_q2.html</a>
-			<a href="Practical6" style="text-decoration: none;"><button>Click to see all practical
-					documents</button></a>
+
 		</div>
 		<hr>
 
@@ -440,54 +206,8 @@
 
 			<h1>Week 7</h1>
 			<h3>Summary</h3>
-			<p>This weeks practical looked into using conditional branch statements such as:</p>
-			<ul>
-				<li>if... statement</li>
-				<li>if... else statement</li>
-				<li>if... else if... else... statement</li>
-				<li>switch statement</li>
-			</ul>
-			<p>All if statments use similar syntax so I will show one statment that covers all 3:</p>
-			<blockquote>
-				if (condition) { <br>
-				statements to execute if the condition is true <br>
-				} <br>
-				else if (condition) { <br>
-				statements to execute if the condition is true <br>
-				} <br>
-				else { <br>
-				statements to execute if the condition is false <br>
-				} <br>
-			</blockquote>
-			<p>A switch statement's syntax looks like:</p>
-			<blockquote>
-				switch (expression) {<br>
-				case value_1 : <br>
-				statements; <br>
-				break; <br>
-				case value_2 : <br>
-				statements; <br>
-				break; <br>
-				default : <br>
-				statements; <br>
-				} <br>
-
-			</blockquote>
 
 			<h3>Practical</h3>
-			<p>The first question wanted a JavaScript application to calculate the average of four marks
-				using user input for marks 1, 2, 3 and 4. This was created using an if... else if... if statement.
-			</p>
-			<p>The application had some validation, if the user did not input a mark an alert would display asking for
-				input</p>
-			<a href="Practical7/practical7_q2aii.html">practical7_Q2a.html</a>
-
-			<p>Then, we had to modify this code to use a switch statement to achieve the same result</p>
-			<a href="Practical7/practical7_q2b.html">practical7_Q2a.html</a>
-
-			<a href="practical7" style="text-decoration: none;"><button>Click to see all practical
-					documents</button></a>
-
 
 		</div>
 		<hr>
@@ -498,53 +218,8 @@
 
 			<h1>Week 8</h1>
 			<h3>Summary</h3>
-			<p>Week 8's lecture was titled form validation and covered how to:</p>
-			<ul>
-				<li>Use form validation to examine text</li>
-				<li>Understand the princiuples of working with text fields</li>
-				<li>Detect and change the format of information in a text field</li>
-				<li>Work with radio buttons, check boxes, and selection menus</li>
-				<li>Create simple, self grading tests</li>
-			</ul>
-			<p>There are different types of form validation, including: valid email address, valid date, valid text type
-				and
-				leaving required fields empty</p>
-			<p>We should remind the visitor to enter missing data and reformat the visitor's data as needed</p>
 
 			<h3>Practical</h3>
-			<p>The initial question wanted the use of loops to create a table of multiplcations, with as many
-				rows/columns as
-				the user wished</p>
-			<a href="Practical8/practical8_q2.html">Practical8_Q2.html</a>
-			<p>Then we needed to modify the script to be able to search for a specific value, and then tell the user
-				which
-				row/column it was situated in</p>
-			<a href="Practical8/practical8_q3.html">Practical8_Q3.html</a>
-			<p>Once these were complete we started building an insurance quote checker form which used the following
-				criteria</p>
-			<ul>
-				<li>if the age is above 30 (include 30) and married, the car insurance is "class 1";</li>
-				<li>if the age is above 30 (include 30) and single, the car insurance is "class 2";</li>
-				<li>if the age is above 21 and below 30, married, the car insurance is "class 3"; </li>
-				<li>if the age is above 21 and below 30, single, the car insurance is "class 4"; and</li>
-				<li>if the age is above 17 and below 21, the car insurance is "class 5"</li>
-			</ul>
-			<a href="Practical8/practical8_q4.html">Practical8_Q4.html</a>
-
-			<p>The final question asked for us to modify the script to validate the form before submitting it. To do
-				this part
-				of the practical
-				I did some personal research into how to achieve the required validation neccessary and found you can
-				use "regular
-				expression"
-				in JavaScript to check for things like alphabetical characters only.
-			</p>
-			<p>For the age, I used an input type of number so only numbers can be input - this was added in HTML5</p>
-			<a href="Practical8/practical8_q5.html">Practical8_Q5.html</a>
-
-			<a href="practical8" style="text-decoration: none;"><button>Click to see all practical
-					documents</button></a>
-
 
 		</div>
 		<hr>
@@ -554,71 +229,8 @@
 		<div id="week9">
 			<h1>Week 9</h1>
 			<h3>Summary</h3>
-			<p>Week 9 was set to discuss more form validation techniques such as:</p>
-			<ul>
-				<li>String methods</li>
-				<li>Email validation</li>
-				<li>Reformatting</li>
-			</ul>
-			<p>We were also notified of a class test that would take place in week 10 and include everything from weeks
-				1
-				through
-				9</p>
-			<p>Jane began with String methods where she told us about how a string can actually be considered an array.
-				This is because you can select specific characters through zero-based indexing e.g.
-			</p>
-			<blockquote>
-				let myname = "Thomas Gormley";<br>
-				let Ch1 = myname[0];//Ch1 = "T"
-			</blockquote>
-			<p>This means that we can also access other properties such as:
-				<ul>
-					<li>
-						<i>length</i> to obtain the number of characters in the string
-					</li>
-					<li>
-						<i>charAt(n)</i> which will get the character in the tring at the postion of <i>n</i>.
-					</li>
-					<li><i>indexOf(a character, n)</i> will show the postion of the character in the string, searching
-						from the
-						postion <i>n</i>
-					</li>
-					<li>
-						<i>substring(n1, n2)</i> method will obtain the substring of characters in the string object
-						from the
-						position <i>n1</i> to <i>n2</i>, not including n2
-					</li>
-				</ul>
-			</p>
-			<p>Email validation consisted of getting the location of "@" symbol, identifying the ".", getting the length
-				of the
-				full email address and ensuring all the conditions should be fulfilled</p>
-			<p>
-				Reformatting data, for example a phone number would use steps like: getting the input string, picking up
-				the
-				numbers only and then an if statement containing checking for different properties of the phone number
-				to then output the full number.
-			</p>
-			<p>We could then combine all of these functions to ensure they all return true, and so then could execute
-				the main
-				form
-				function.</p>
 
 			<h3>Practical</h3>
-			<p>Our practical this week involved introducing our new validation techniques into a form we created early
-				in
-				semester
-				1.</p>
-			<p>We had to check the text input fields, radio button and checkbox input of our page. This was created
-				using
-				multiple
-				functions that would either return true or false depending on if the user input or not correctly.
-				The form had to give user friendly error messages to ensure all data required was input and thus, so we
-				could
-				accurately output the information again in the comments box
-			</p>
-			<a href="practical9/practical9_q2.html">Practical9_Q2.html</a>
-
 
 			<hr>
 		</div>
@@ -627,26 +239,8 @@
 		<div id="week10">
 			<h1>Week 10</h1>
 			<h3>Summary</h3>
-			<p>In week 10 we learned how to create an image rollover using JavaScript functions</p>
-			<p>We had already created something similar earlier in the module, however this was a basic way that
-				utilised the
-				onmouseover/onmouseout built in HTML events</p>
-			<p>A more effective rollover would preload the images into the browser's cache that could then be accessed
-				by
-				filling the SRC properties with our images</p>
-			<p>To do this we would need to also create our rollOn/rollOff functions</p>
-			<p>We also learned it would be possible to create the same effect using only one function - this was known
-				as a
-				double rollover function.</p>
-			<p>This example would take 2 arguments, either ON/OFF and the image name</p>
 
 			<h3>Practical</h3>
-			<p>Due to having a lengthy class test in week 10, our practical lab was cut somewhat short.</p>
-			<p>We were asked to look at the lecture notes and create a rolloff page of our own using functions</p>
-			<p>I created my page using popular car manufacturers logos as the images, and if the user clicks the image
-				it would
-				bring them to the relevant websites</p>
-			<a href="practical10/index.html">Practical10.html</a>
 
 		</div>
 		<hr>
@@ -654,37 +248,8 @@
 		<div id="week11">
 			<h1>Week 11</h1>
 			<h3>Summary</h3>
-			<p>For this lecture our objective was to understand how to create captioned slideshows that can be
-				controlled with
-				navigation buttons and to learn how to create animated banner advertisements with links</p>
-			<p>The slideshow can be created by using the DOM structure and functions to assign new images upon button
-				clicks</p>
-			<p>The animated banner utilised a new method called setTimeout() which would let us create a timer of sorts
-				that can
-				change the image after a specific timeframe. </p>
-			<p>This method takes an argument in milliseconds so 1000 = 1 second</p>
 
 			<h3>Practical</h3>
-			<p>Our practical questions asked us to create the slideshow and animated banner we learned about earlier
-				that week
-				in our lecture</p>
-			<p>The slideshow was just a matter of creating functions that would switch the image out depending on what
-				location
-				of the array we were at.</p>
-			<p>We also display the current slide number to the user by changing the DOM elements in our javascript file.
-			</p>
-			<p>Again, we preloaded our images like the previous week to ensure optimal performance.</p>
-			<a href="practical11/practical11_q1.html">Practical11_q1.html</a>
-
-			<p>The animated banner was created using the new method we learned, <i>setTimeout()</i>. Every second, the
-				image
-				updates to a different logo, if the user clicks when on a specific logo it will redirect them to the
-				relevant site.</p>
-			<a href="practical11/practical11_q2.html">Practical11_q2.html</a>
-			<br>
-			<br>
-			<a href="practical11" style="text-decoration: none;"><button>Click to see all practical
-					documents</button></a>
 
 		</div>
 		<hr>
@@ -692,23 +257,8 @@
 		<div id="week12">
 			<h1>Week 12</h1>
 			<h3>Summary</h3>
-			<p>This is the last lecture for semester 1. During this lecture we recieved some feedback on the Class Test
-				completed in week 10</p>
-			<p>After, we went through and got feedback on some questions that were answered poorly during the test</p>
-			<h3>Practical</h3>
-			<p>The practical was a general revision practical of what we learned through semester 1 - after this we then
-				did the
-				corrections of the questions that were discussed during the lecture earlier in the week</p>
-			<a href="practical12/corrections.html">corrections.html</a>
 
-			<p>Finally, we were tasked with creating a budget calculator for the Christmas time, whereby the user can
-				input
-				their budget and get a message depending on if the budget is negative or positive</p>
-			<a href="practical12/christmasbudget.html">Budget Calculator</a>
-			<br>
-			<br>
-			<a href="practical12" style="text-decoration: none;"><button>Click to see all practical
-					documents</button></a>
+			<h3>Practical</h3>
 
 		</div>
 	</div> <!-- /container div -->
