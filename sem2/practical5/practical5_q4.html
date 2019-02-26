@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        function count() {
+            if ($("select option:selected").val() == '1') {
+                alert($("select option:selected").text())
+            }
+            else if ($("select option:selected").val() == '2') {
+                alert($("select option:selected").text())
+            }
+            else if ($("select option:selected").val() == '3') {
+                alert($("select option:selected").text())
+            }
+            else if ($("select option:selected").val() == '4') {
+                alert($("select option:selected").text())
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <h1>Checkbox Counting</h1>
+
+    <form>
+        <p> Select an destination for your next holiday: </p>
+
+        <select size="5" multiple="true">
+            <option value="1">Option 1 - 5 days in Rome</option>
+            <option value="2">Option 2 - 7 days in Washington</option>
+            <option value="3">Option 3 - 3 days in Malta</option>
+            <option value="4">Option 4 - 7 days in Hong Kong</option>
+        </select>
+
+        </br>
+        <input type="button" value="Count" onclick="count();"> </input>
+
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Semester 2 Practical 1</title>
+    <script>
+        var imageArray = new Array();
+
+        imageArray[0] = "leftup.jpg";
+        imageArray[1] = "rightup.jpg";
+
+
+
+        function changeImage() {
+            for (i = 0; i < imageArray.length; i++) {
+                document.getElementById("imageSource").src = imageArray[i];
+
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="setInterval(changeImage(), 3000)">
+    <div id="imageBox">
+        <img src="leftup.jpg" id="imageSource">
+    </div>
+</body>
+
+</html>

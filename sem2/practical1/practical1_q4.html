@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Semester 2 Practical 1</title>
+    <script>
+        function checkPass() {
+            let pass = document.getElementById('password').value;
+            if (pass.length < 6) {
+                alert("Please enter a password with 6 or more characters")
+
+            }
+            else {
+                document.write("Thank you for providing a password");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p>Enter a password with 6 or more characters</p>
+    <input type="password" name="password" id="password">
+    <button onclick="checkPass();">Check Password</button>
+</body>
+
+</html>

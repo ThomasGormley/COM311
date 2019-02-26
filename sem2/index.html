@@ -46,10 +46,35 @@
 
 			<h1>Week 1</h1>
 			<h3>Summary</h3>
+			<p>
+				To keep the lecture notes and practicals in the same weeks on my learning log I have placed the actual
+				week 1 lecture in week 2 with the practical to keep things neat and tidy.
 
+			</p>
+			<p>
+				So for the purposes of this learning log I have no week 1 lecture.
+			</p>
 
 			<h3>Practical</h3>
+			<p>
+				This practical was all about revision from last semester, in this practical we created a number of basic
+				web pages that did specific things.
 
+			</p>
+			<p>
+				We created a web page that used a function to display the time and place of lab classes from variables
+				we passed into the function. <br>
+				Then we made a page that would take user input from a prompt and pass it through to the web page to
+				place into a paragraph. <br>
+				Next we made a password box that used an if statement to check the length of the of the user input and
+				made sure it was more than 6 characters. <br>
+				Finally it was a loop through of 2 images that would change. I'm not sure if my code is correct for this
+				as I couldn't get it to work as intended.
+			</p>
+
+			<a href="/practical1/">
+				<button>Click to see all practical documents</button>
+			</a>
 		</div>
 		<hr>
 
@@ -58,9 +83,65 @@
 
 			<h1>Week 2</h1>
 			<h3>Summary</h3>
-
+			<p>
+				This lecture was discussing how to use the Date and Time objects in JavaScript.
+			</p>
+			<p>
+				To create a Date object you must define a variable of type date, for example <br>
+				<i>var today = new Date();</i> <br>
+				Once this object is created, you can then call various methods on it for example,
+				<ul>
+					<li>toLocaleString</li>
+					<li>toGMTString</li>
+					<li>getDate</li>
+					<li>getMonth</li>
+					<li>getDay</li>
+					<li>getFullYear</li>
+					<li>getTime</li>
+					<li>getHours</li>
+					<li>getMinutes</li>
+					<li>getSeconds</li>
+					<li>getMilliseconds</li>
+				</ul>
+			</p>
+			<p>
+				We also looked at how to create a simple clock with the setTimeout() and the setInterval() functions.
+			</p>
 			<h3>Practical</h3>
+			<p>
+				The first question asked us to create a day checker. This would work whereby the user would type in
+				their desired year, month and day and the page would tell them what day of the week this was.
 
+			</p>
+			<p>
+				I was able to do this by creating a function called findDay, which would take the users input and create
+				a new date object from that. Then I could use the getDay method to give me a value between 0-6 depending
+				on what day it was. Using this, I created an array of the weekdays which corresponded with the number
+				the JavaScript method gave me.
+			</p>
+			<p>
+				After this, I simply output the result to an empty paragraph tag.
+			</p>
+			<p>
+				We were also asked to create a simple clock and display it at the top of the page.
+			</p>
+			This can be viewed at <a href="practical2/practical14_q1.html">practical2_q1.html</a>
+
+			<p>
+				Next I created a basic "reminders" web application whereby the page will notify users of certain tasks
+				depending on the time of day.
+			</p>
+			<p>
+				For example, every Monday if the time is between 9-11am the user will be instruced to go to class.
+
+			</p>
+			<p>
+				This can be viewed at <a href="practical2/practical14_q2.html">practical2_q2.html</a>
+			</p>
+
+			<a href="/practical2/">
+				<button>Click to see all practical documents</button>
+			</a>
 		</div>
 		<hr>
 
@@ -97,7 +178,31 @@
 			</p>
 
 			<h3>Practical</h3>
-
+			<p>
+				This practical all about cookies allowed us to create a web form for a username/password and using the
+				mylibrary.js functions to remember user input/userchoices.
+			</p>
+			<p>
+				On load, the form asks the user to register, and if the user does put in a username/password and clicks
+				remember password, then we store the information in cookies using the makeCookies() function Jane
+				provided us with.
+			</p>
+			<p>
+				This form can be seen <a href="practical3\practical15_q1.html">practical3_q1.html</a>
+			</p>
+			<p>
+				The second form for this webpage was a background colour selector that would remember the users
+				preferences using cookies. The user could reset this selection by pressing a button that would delete
+				all cookies.
+			</p>
+			<p>
+				I ran into some problems when developing as Google Chrome does not store cookies on local files and so I
+				spent quite some time debugging before realising that was the issue - so because of this these forms
+				will need to be run in Internet Explorer to work as intended.
+			</p>
+			<a href="/practical3/">
+				<button>Click to see all practical documents</button>
+			</a>
 		</div>
 		<hr>
 
@@ -181,10 +286,56 @@
 
 			<h1>Week 5</h1>
 			<h3>Summary</h3>
+			<p>
+				This week began with Jane telling us about our group project scenarios, and how we should go about
+				creating the project e.g. what steps we should take.
+			</p>
 
+			<p>
+				Then the main content for the lecture was jQuery part 2 - we looked at some more functions within
+				jQuery.
+
+				<ul>
+					<li>jQuery() = $()</li>
+					<li>$(function) The “Ready” handler</li>
+					<li>$(‘selector’) Element selector expression</li>
+					<li>$(element) Specify element(s) directly</li>
+					<li>$(‘HTML’) HTML creation</li>
+					<li>$.function() Execute a jQuery function</li>
+					<li>$.fn.myfunc(){ } Create jQuery function</li>
+				</ul>
+			</p>
+			<p>
+				We were then given a large list from w3schools which contained all of the jQuery selectors.
+			</p>
+
+			<p>
+				The lecture also showed us that jQuery can be used to create visual effects for example
+				.slideUp("slow").
+			</p>
 
 			<h3>Practical</h3>
 
+			<p>
+				The practical this week was working on improving examples from the lecture using the jQuery we learned.
+
+			</p>
+			<p>
+				The first one was a counting the number of checked checkboxes using the .length method in jQuery, for
+				the second question
+				we then just modified this to work with select list of options rather than radio buttons.
+			</p>
+			<p>
+				Question 3 and 4 related to 1 and 2 whereby it was modifying the code to check what the user had
+				selected and e.g. tell them
+				if we were on the same course (question 3) or else repeat the options they had selected (question 4).
+			</p>
+
+			<p>
+				<a href="/practical4/">
+					<button>Click to see all practical documents</button>
+				</a>
+			</p>
 		</div>
 		<hr>
 

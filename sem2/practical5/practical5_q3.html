@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+    <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        function count() {
+
+            if ($("input:checked").val() == 'bfast') {
+                alert("We are not on the same site");
+            }
+            else if ($("input:checked").val() == 'jtown') {
+                alert("We are on the same site")
+            }
+            else if ($("input:checked").val() == 'magee') {
+                alert("We are on the same site")
+            }
+            else if ($("input:checked").val() == 'col') {
+                alert("We are on the same site")
+            }
+        }
+
+
+    </script>
+</head>
+
+<body>
+    <h1>Counting checked checkboxes</h1>
+    <form>
+        <input type="radio" value="bfast">Belfast</input>
+        <input type="radio" value="jtown">Jordanstown</input>
+        <input type="radio" value="magee">Magee</input>
+        <input type="radio" value="col">Coleraine</input>
+
+        </br>
+        </br>
+
+        <input type="button" value="Select" onclick="count();"> </input>
+    </form>
+</body>
+
+</html>
