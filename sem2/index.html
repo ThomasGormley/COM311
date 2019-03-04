@@ -332,7 +332,7 @@
 			</p>
 
 			<p>
-				<a href="/practical4/">
+				<a href="/practical5/">
 					<button>Click to see all practical documents</button>
 				</a>
 			</p>
@@ -345,8 +345,63 @@
 
 			<h1>Week 6</h1>
 			<h3>Summary</h3>
+				<p>
+			This week we looked at how to select all elements of a certain type, for example all img tags, or all elements with the same attribute.
+				</p>
+				<p>
+					This can be done through using <br>
+					<i>$(selector).each</i> <br>
+					And then you can apply a function to each of these elements through using <br>
+					<i>$(selector).each(function) {</i> <br>
 
+				</p>
+				<p>
+					For example, to get the attrivutes of all image alt tags you could use: <br>
+					<i>
+
+						function getAlt(){ <br>
+							$("img").each(function(m){ <br>
+							alert(this.alt); <br>
+							}); <br>
+							} <br>
+
+					</i>
+				</p>
+
+				<p>
+					After this we looked at how you could select a subset of elements using the selector.slice(start, end) method.
+				</p>
+				<p>
+					This selects a subset of the matched elements. Starting from the 'start', to 'end' but excludes the 'end'.
+				</p>
+				<p>
+					For example: <br>
+					<i>
+						$(document).ready(function() {<br>
+							$("li").slice(2, 5).addClass("selected");<br>
+							});<br>
+					</i>
+					Will add the class "selected" to the 2nd, 3rd and 4th list items.
+				</p>
 			<h3>Practical</h3>
+				<p>
+					In this weeks practical we used the examples from the lecture to create our own webpages with similar scenarios.
+				</p>
+				<p>
+					The first question wanted us to create functions to zoom in/zoom out 4 images with the click of a button, this was done by selecting each img element and increasing the width/height by 20%.
+					<br>
+					Secondly, we created 2 buttons: 1 to move to the next image set, and one to move back to the original again. This was achieved through a loop and selecting each img element.
+				</p>
+				<a href="practical6/practical6_q2.html">practical6_q2.html</a>
+				<p>
+					Next was an example of the .slice method where upon clicking a text link the div blocks 3-6 (exclusive) would change background colour.
+
+				</p>
+				<a href="practical6/practical6_q3.html">practical6_q3.html</a>
+
+				<a href="/practical6/">
+					<button>Click to see all practical documents</button>
+				</a>
 
 		</div>
 		<hr>
