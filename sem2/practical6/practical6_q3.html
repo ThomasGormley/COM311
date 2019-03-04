@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Demo example</title>
+    <script type="text/javascript" src="../jquery/jquery-3.3.1.min.js">
+    </script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#sliceExample").click(function () {
+                $("div").slice(3, 6).addClass("selected");
+            })
+        })
+    </script>
+    <style>
+        div {
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            float: left;
+        }
+
+        .selected {
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <h4><a href="javascript:void(0);" id="sliceExample">Click to run change the block
+            background color </a></h4>
+    <div>0</div>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+    <div>7</div>
+    <div>8</div>
+    <div></div>
+</body>
+
+</html>

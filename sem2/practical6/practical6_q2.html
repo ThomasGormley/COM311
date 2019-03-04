@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Practical 6 - Q2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../jquery/jquery-3.3.1.min.js"></script>
+
+    <script type="text/javascript">
+        //Zoom In function
+
+        function zoomIn() {
+            $("img").each(function () {
+                this.width *= 1.2;
+                this.height *= 1.2;
+            });
+        }
+
+        //Zoom out function
+        function zoomOut() {
+            $("img").each(function () {
+                this.width *= 0.8;
+                this.height *= 0.8;
+            });
+        }
+
+        //Next Images function
+        function nextImg() {
+
+            $("img").each(function () {
+                for (i = 0; i < 4; i++) {
+                    var img = $(this).attr('src').split("/")[2];
+                    var number = img.split(".")[0];
+                    parseInt(number);
+
+                    $(this).attr("src", "../img/" + (parseInt(number) + 1) + ".png");
+                }
+            });
+        }
+
+        //Prev Images function
+        function prevImg() {
+            $("img").each(function () {
+                for (i = 4; i > 0; i--) {
+                    var img = $(this).attr('src').split("/")[2];
+                    var number = img.split(".")[0];
+                    parseInt(number);
+
+                    $(this).attr("src", "../img/" + (parseInt(number) - 1) + ".png");
+                }
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Zoom in Zoom Out</h1>
+    <input type="button" value="Zoom in images" onclick="zoomIn()">
+    <input type="button" value="Zoom out images" onclick="zoomOut()">
+    <input type="button" value="Next Image Set" onclick="nextImg()">
+    <input type="button" value="Previous Image Set" onclick="prevImg()">
+
+    <br>
+
+    <img src="../img/1.png" id="1" height="200"></img>
+    <img src="../img/2.png" id="2" height="200"></img>
+    <img src="../img/3.png" id="3" height="200"></img>
+    <img src="../img/4.png" id="4" height="200"></img>
+
+</body>
+
+</html>
