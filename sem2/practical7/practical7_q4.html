@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>Capturing hover events</title>
+    <script type="text/javascript" src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js ">
+</script>
+    <script type="text/javascript">
+
+        $(function () {
+            $('#image').hover(over, out);
+        });
+
+        function over(event) {
+            $('#image').attr('src', "../img/2.png");
+        }
+
+        function out(event) {
+            $('#image').attr("src", "../img/1.png");
+        }
+    </script>
+</head>
+
+<body>
+
+    <h1> Capturing hover events</h1>
+    <img src="../img/1.png" id="image" height="300px">
+</body>
+
+</html>

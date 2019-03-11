@@ -1,0 +1,29 @@
+<html>
+
+<head>
+    <title>Capturing hover events</title>
+    <script type="text/javascript" src="
+https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js ">
+</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("a").on('click', function () {
+                alert('I am clicked');
+            });
+            $("a").on('mouseover', function () {
+                alert('Mouse Over');
+            });
+            $("a").on('mouseout', function () {
+                alert('Mouse Out');
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <h1> Capture click and mouseover events</h1>
+    <a href="#">Here is a useful link</a>
+</body>
+
+</html>
