@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("#img").slideUp();
+  });
+  $(".btn2").click(function(){
+    $("#img").slideDown();
+  });
+});
+</script>
+</head>
+<body>
+
+  <img id="img" height="200" width="200" src="../img/arsenal.jpg"> <br>
+
+<button class="btn1">Slide up</button>
+<button class="btn2">Slide down</button>
+
+</body>
+</html>
